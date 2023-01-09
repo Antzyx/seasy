@@ -274,20 +274,23 @@ folder in `mmdetection/configs` named `candies`, and place the two following con
 - the training config (`configs/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_candies.py`)
 - the inference config (`configs/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_candies_infer.py`)
 
+Then similarly change the paths in there to adapt the absolute path of your project.
+
 Then, for fine-tuning, first replace `mmdetection/mmdet/datasets/pipelines/transforms.py` with our own version 
-(`src/transforms.py`) then go to the mmdetection folder and run the following script for however many epochs you wish : 
-`python tools\train.py configs\candies\mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_candies.py`. You might have to change
-folder separators on Linux. The results we present are obtained after 1 epoch of training. The logs and weights are 
-stored under `work_dirs/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_candies`.
+(`mmdet_src/transforms.py`) then go to the mmdetection folder and run the following script for however many epochs you 
+wish : `python tools\train.py configs\candies\mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_candies.py`. You might have to
+change folder separators on Linux. The results we present are obtained after 1 epoch of training. The logs and weights
+are stored under `work_dirs/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_candies`.
 
 To perform inference on the provided image, first replace `mmdetection/mmdet/core/visualization/image.py` with our own
-version (`src/image.py`) to integrate our specific post-processing. Then, use the following command :
+version (`mmdet_src/image.py`) to integrate our specific post-processing. Then, use the following command :
 
 `python demo/image_demo.py <PATH TO IMAGE> configs/candies/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_candies_infer.py
 work_dirs/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_candies/latest.pth --device cpu
 --out-file work_dirs/mask_rcnn_r50_caffe_fpn_mstrain-poly_1x_candies/result.jpg`
 
-You may use provided weights for this purpose, which constitute our version of the detector (`model.pth`).
+You may use provided weights for this purpose, which constitute our version of the detector (`pretrained-model.pth`).
+You can also compare with our results which can be found at the root of the project.
 
 ### References
 [1] Mask R-CNN, He et al., https://arxiv.org/abs/1703.06870

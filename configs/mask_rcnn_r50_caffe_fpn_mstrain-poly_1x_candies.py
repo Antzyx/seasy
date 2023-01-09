@@ -13,7 +13,7 @@ classes = ('mms', 'mms_nut', 'skittle', 'bean')
 data = dict(
     train=dict(
         dataset=dict(
-            img_prefix='C:/Users/Jules/PycharmProjects/seasy_challenge/data/render/coco_data_medium/',
+            img_prefix='CHANGE-ME/seasy_challenge/data/render/coco_data/',
             classes=classes,
             pipeline=[
                 dict(type='LoadImageFromFile'),
@@ -46,17 +46,17 @@ data = dict(
                     type='Collect',
                     keys=['img', 'gt_bboxes', 'gt_labels', 'gt_masks'])
             ],
-            ann_file='C:/Users/Jules/PycharmProjects/seasy_challenge/data/render/coco_data_medium/coco_annotations.json'),
+            ann_file='CHANGE-ME/seasy_challenge/data/render/coco_data_medium/coco_annotations.json'),
         ),
     val=dict(
-        img_prefix='C:/Users/Jules/PycharmProjects/seasy_challenge/data/render/coco_data_small/',
+        img_prefix='CHANGE-ME/seasy_challenge/data/render/coco_data_small/',
         classes=classes,
-        ann_file='C:/Users/Jules/PycharmProjects/seasy_challenge/data/render/coco_data_small/coco_annotations.json',
+        ann_file='CHANGE-ME/seasy_challenge/data/render/coco_data_small/coco_annotations.json',
         ),
     test=dict(
-        img_prefix='C:/Users/Jules/PycharmProjects/seasy_challenge/data/render/coco_data_small/',
+        img_prefix='CHANGE-ME/seasy_challenge/data/test/images',
         classes=classes,
-        ann_file='C:/Users/Jules/PycharmProjects/seasy_challenge/data/render/coco_data_small/coco_annotations.json',
+        ann_file='CHANGE-ME/seasy_challenge/data/test/coco_annotations.json',
         ),
     )
 

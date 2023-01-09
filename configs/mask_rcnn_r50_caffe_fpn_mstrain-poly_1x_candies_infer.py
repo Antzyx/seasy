@@ -32,10 +32,10 @@ dataset_type = 'COCODataset'
 classes = ('mms', 'mms_nut', 'skittle', 'bean')
 data = dict(
     test=dict(
-        img_prefix='C:/Users/Jules/PycharmProjects/seasy_challenge/data/render/coco_data_medium/',
+        img_prefix='CHANGE-ME/seasy_challenge/data/test/images/',
         classes=classes,
         pipeline=test_pipeline,
-        ann_file='C:/Users/Jules/PycharmProjects/seasy_challenge/data/render/coco_data_medium/coco_annotations.json',
+        ann_file='CHANGE-ME/seasy_challenge/data/test/coco_annotations.json',
         ),
     )
 
