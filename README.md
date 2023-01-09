@@ -1,4 +1,6 @@
 # Assignment - Seasy
+https://seasyat.notion.site/Seasy-ML-Engineer-Assignment-ab65730c7bad474fa48ff2c405b10a36
+
 ### TL;DR
 
 As evidenced by the length of the following README, I tend to be somewhat thorough in my reporting. As an apology, I present to you this
