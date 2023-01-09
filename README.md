@@ -29,6 +29,7 @@ Finally, classification shows the following confusion matrix :
 | N | 0 | 8 | 0  | 0 |
 | S | 1 | 0 | 14 | 0 |
 | S | 0 | 0 | 1  | 8 |
+
 This shows a general accuracy of 77.5%. Generally speaking, M&Ms with nuts and beans are expectedly very well classified. 
 Also expectedly, skittles are very hard to distinguish from M&Ms because of their close resemblance, and the lack of
 trademarks in the generated textures.
@@ -211,6 +212,7 @@ Finally, we construct the following confusion matrix by hand :
 | N | 0 | 8 | 0  | 0 |
 | S | 1 | 0 | 14 | 0 |
 | S | 0 | 0 | 1  | 8 |
+
 This shows a general accuracy of 77.5%. Generally speaking, M&Ms with nuts and beans are expectedly very well classified. 
 Also expectedly, skittles are very hard to distinguish from M&Ms because of their close resemblance, and the lack of
 trademarks in the generated textures.
