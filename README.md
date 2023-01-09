@@ -258,8 +258,8 @@ that file in the `image_rendering.pass_path` parameter of the config `configs/co
 Finally, go to `scripts/generate_renders.bat` and change the paths such that they correspond to your installation. The 
 first path is the path to the repo for the project. The second and third paths are the absolute paths to the conda
 executable file (if your python environment is not created with conda, make sure the code uses the proper environment).
-The fourth path is the absolute path to `data_generation/render.py`. You might want to run the command directly if you
-are on linux, rather than changing the batch script to a shell script.
+The fourth path is the absolute path to the blenderproc executable. You might want to run the command directly if you
+are on linux, rather than changing the batch script to a shell script. This script should be run from the project root.
 
 This script will generate 10 000 samples. You may stop it at any time and start it again to resume. You may launch it
 several times in a row to generate more than 10 000 samples. It is ill-advised to start it several times in parallel. We 

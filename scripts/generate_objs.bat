@@ -1,0 +1,1 @@
+"C:\Program Files\Blender Foundation\Blender 3.4\blender.exe" -b -P "CHANGE-ME\seasy_challenge\data_generation\candy_generator_script.py"

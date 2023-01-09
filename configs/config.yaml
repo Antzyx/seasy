@@ -1,0 +1,58 @@
+---  # General params
+data_folder: "CHANGE-ME\\seasy_challenge\\data"
+
+
+--- !obj_creation  # OBJ creation params
+obj_folder: "obj"
+number_of_obj_per_class: 1000
+classes:  # Class characteristics are extracted from the provided data and personal observations
+  mms:
+    dimensions: [0.55, 0.55, 0.275]
+    dimension_variability: 0.05
+    strength: 0.1
+    strength_variability: 0.25
+  mms_nut:
+    dimension_variability: 0.05
+    strength: 0.5
+    strength_variability: 0.25
+  skittle:
+    dimensions: [0.55, 0.55, 0.375]
+    dimension_variability: 0.05
+    strength: 0.3
+    strength_variability: 0.25
+  bean:
+    dimensions: [0.65, 0.4, 0.4]
+    dimension_variability: 0.05
+    strength: 0.3
+    strength_variability: 0.25
+mms_nut_dimension:
+  x: [0.5, 1]
+  y: 0.6
+  z: 0.5
+
+--- !image_rendering  # Rendering of image data
+pass_path: "CHANGE-ME\\PASS\\PASS_dataset_section_0"
+render_path: "render"
+number_of_candies_per_scene: [40, 50]
+number_of_images: 10
+
+light: !light
+  type: POINT
+  energy: [500, 200]
+  shell_center: [0, 0, 2]
+  shell_radius: [4, 7]
+  shell_elevation: [15, 30]
+
+camera.location: [[0, 0, 2], [0, 0, 4]]
+
+candies: !candies
+  location: [[-0.7, -0.7, -0.5], [0.7, 0.7, 1]]
+  hue: [0, 1]
+  saturation: [ 0.6, 1 ]
+  value: [0.1, 1]
+  specularity: [0.7, 1]
+  metalness: [0, 0.4]
+
+
+--- !annotation_correction  # Correction of the annotation format
+dataset_name: "coco_data"
