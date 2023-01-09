@@ -1,7 +1,7 @@
 # Assignment - Seasy
 ### TL;DR
 
-As evidenced by the length of the following README, I tend to be somewhat thorough. As an apology, I present to you this
+As evidenced by the length of the following README, I tend to be somewhat thorough in my reporting. As an apology, I present to you this
 summary.
 
 The problem formulation is heavily under-constrained, and a single test sample is given. Therefore, the assignment is 
